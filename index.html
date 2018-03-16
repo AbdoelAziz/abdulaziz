@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+
+.bingkai
+{
+	border-radius: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-top: 270px;
+	border: solid black;
+	background:grey;
+	width: 500px;
+	height: 200px;
+}
+
+.tombol
+{
+	margin : 50px;
+	margin-left: auto;
+	margin-bottom: auto;
+	margin-right: auto;
+	border-radius: 30px;
+	background-color: blue;
+	height:50px;
+	width:100px;
+	border-radius: 30px; 
+	color:white;
+}
+	</style>
+	<script>
+		function pass()
+		{
+			var person = prompt("Please enter Name", );
+
+			if (person == "aziz") {
+				alert('Selamat, anda berhasil login!')
+    		window.location.href="aziz.html";
+			}
+			else{
+				alert('Selamat, anda gagal login!')
+				window.location.href="error.html"
+			}
+		}
+	</script>
+</head>
+<body background="img/1.jpg">
+<div class= "bingkai" align="center">
+		<p>Selamat datang</p>
+		<p>Silahkan verifikasi diri anda sebelum direct ke halaman</p>
+	<button class="tombol" onclick="pass()">Verifikasi</button>
+
+</div>
+</body>
+</html>
